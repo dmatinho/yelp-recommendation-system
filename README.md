@@ -18,8 +18,11 @@ This project aims to practice how to deal with large data sets using PySpark. Th
 ## Cleaning & Exploratory analysis
 •	We focus on the restaurants out of the all data and we only analyze data from the US
 •	Data is from 2004 to 2018
+
 •	Business itself: most restaurants are in LV and AZ is the state with largest number of restaurants. Most restaurants in the data are American food followed by Italian and Mexican
+
 •	Reviews: McDonalds is the restaurant with largest number of 1star and the top 3 restaurants are Hash, Mon ami and n-out; people tend to rate more when they like the restaurants. 
+
 •	User: people tend to give longer reviews for the restaurants they rate better (4 and 5 stars); Users: tend to rate more on Sundays
 
 ## Sentiment analysis
@@ -35,7 +38,9 @@ This project aims to practice how to deal with large data sets using PySpark. Th
 
 ## Modeling
 •	Association Mining – we recommend the category of the restaurant users might go in the future according to the category restaurants that they went in the past. We try to predict the type of restaurants users are willing to try. If you like pizza (according to the restaurants you visited before, there is an higher chance to go to fast food places).
+
 •	ALS – we recommend restaurants to users according to the city where they are based. In this case we used the top 3 cities with the largest number of restaurants (Las Vegas, Phoenix and Scottsdale). We use stars, restaurants and users and the algorithm uses stars to recommend the restaurants to users. We recommend restaurants to people and the other way around.
+
 •	Graphs – we use the categories of restaurants that friends went to recommend restaurants to users are likely to go. We filter by categories (Mexican food) and starts (>4). In this case, we have one person with about 200 friends and all the restaurants they went, which are likely to suit the user. (grey = friend and red = restaurants) – More dense means more friends went so this restaurant may be a good fit for the user.
 
 ## Findings 
